@@ -1,6 +1,7 @@
 package com.epam.mjc.io;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
@@ -17,7 +18,7 @@ public class FileReader {
             }
 
         } catch (IOException e) {
-            throw new RuntimeException(e.getMessage());
+            e.printStackTrace();
         }
 
         String s  = sb.toString();
